@@ -240,6 +240,10 @@ PRODUCT_PACKAGES += \
     libchrome.vendor \
     libtextclassifier_hash.vendor
 
+# MTK In-call service
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
