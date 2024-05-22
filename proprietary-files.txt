@@ -1,4 +1,4 @@
-## x6833b package version: X6833B-H894DEFGHI-T-GL-231102V2897, unless stated otherwise
+## lg8n package version: LG8n-H894DEFGHI-T-GL-231102V2897, unless stated otherwise
 
 # AEE
 vendor/lib/libaedv.so
@@ -198,11 +198,6 @@ vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
 vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
-vendor/etc/audio_param/preset_default.bin
-vendor/etc/audio_param/preset_music.bin
-vendor/etc/audio_param/preset_ringtone.bin
-vendor/etc/audio_param/preset_voice.bin
-vendor/etc/audio_param/preset_voip.bin
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
@@ -383,30 +378,29 @@ vendor/lib64/libwvhidl.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+vendor/bin/hw/vendor.fptool.fingerprint@2.0-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/etc/init/vendor.fpsensor.rc
+vendor/etc/init/vendor.fptool.fingerprint@2.0-service.rc
 -vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
-vendor/lib64/hw/fpsensor_fingerprint.default.so
+vendor/lib64/hw/vendor.fptool.fingerprint@2.0-impl.so
+vendor/lib64/vendor.fptool.fingerprint@2.0-adapter-helper.so
+vendor/lib64/vendor.fptool.fingerprint@2.0.so
+
 
 # Firmware
 vendor/firmware/BT_FW.cfg
+vendor/firmware/Conf_MultipleTest.ini
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
 vendor/firmware/WMT_SOC.cfg
-vendor/firmware/aw8622x_haptic.bin
-vendor/firmware/aw8622x_osc_rtp_12K_10s.bin
-vendor/firmware/aw8622x_rtp.bin
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_osc_rtp_24K_5s.bin
-vendor/firmware/aw8624_rtp.bin
 vendor/firmware/aw8624_rtp_lighthouse.bin
 vendor/firmware/aw8624_rtp_silk.bin
+vendor/firmware/aw87xxx_acf.bin
+vendor/firmware/awinic_params.bin
 vendor/firmware/fm_cust.cfg
-vendor/firmware/fs1599.fsm
-vendor/firmware/fs3001_1.bin
-vendor/firmware/fs3001_2.bin
-vendor/firmware/fs3001_haptic.bin
-vendor/firmware/fs3001_osc_rtp_12K_10s.bin
+vendor/firmware/focaltech_ts_fw_0.bin
 vendor/firmware/gt9886_cfg_6781v01.bin
 vendor/firmware/gt9886_cfg_6785v96.bin
 vendor/firmware/gt9886_cfg_6785v99.bin
@@ -468,9 +462,7 @@ vendor/firmware/gt9896s_firmware_6893v04.bin
 vendor/firmware/gt9896s_firmware_6893v05.bin
 vendor/firmware/gt9896s_firmware_6895v01.bin
 vendor/firmware/gt9896s_firmware_6983v01.bin
-vendor/firmware/ilitek_ts_fw.bin
 vendor/firmware/lib3a.ccu
-vendor/firmware/mp.ini
 vendor/firmware/mt6627_fm_v1_coeff.bin
 vendor/firmware/mt6627_fm_v1_patch.bin
 vendor/firmware/mt6630_fm_v1_coeff.bin
@@ -489,7 +481,6 @@ vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_fw_144.bin
 vendor/firmware/novatek_ts_fw_jdi.bin
 vendor/firmware/novatek_ts_fw_tm.bin
-vendor/firmware/novatek_ts_mp.bin
 vendor/firmware/remoteproc_scp
 vendor/firmware/soc2_2_ram_bt_1d_1_hdr.bin
 vendor/firmware/soc2_2_ram_bt_1e_1_hdr.bin
@@ -634,7 +625,6 @@ vendor/etc/security/cacerts/c491639e.0
 vendor/etc/security/cacerts/c51c224c.0
 vendor/etc/security/cacerts/c559d742.0
 vendor/etc/security/cacerts/c90bc37d.0
-vendor/etc/security/cacerts/cb156124.0
 vendor/etc/security/cacerts/cb1c3204.0
 vendor/etc/security/cacerts/ccc52f49.0
 vendor/etc/security/cacerts/cf701eeb.0
@@ -669,7 +659,6 @@ vendor/etc/security/cacerts_supl/lab/2cbfcc3a.0
 vendor/etc/security/cacerts_supl/lab/35ef1c14.0
 vendor/etc/security/cacerts_supl/lab/399e7759.0
 vendor/etc/security/cacerts_supl/lab/586933d9.0
-vendor/etc/security/cacerts_supl/lab/6146415b.0
 vendor/etc/security/cacerts_supl/lab/66272d0d.0
 vendor/etc/security/cacerts_supl/lab/6f1dbe5e.0
 vendor/etc/security/cacerts_supl/lab/b5805141.0
@@ -680,7 +669,6 @@ vendor/etc/security/cacerts_supl/111e6273.0
 vendor/etc/security/cacerts_supl/3ad48a91.0
 vendor/etc/security/cacerts_supl/7651b327.0
 vendor/etc/security/cacerts_supl/c542733d.0
-vendor/etc/security/cacerts_supl/cec771d5.0
 vendor/etc/security/cacerts_supl/f336e3d1.0
 -vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
 -vendor/etc/vintf/manifest/gnss@2.1-service.xml
@@ -987,16 +975,17 @@ vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 
 # TEE
-vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
 vendor/app/mcRegistry/030c0000000000000000000000000000.drbin
 vendor/app/mcRegistry/030c0000000000000000000000000000.tlbin
+vendor/app/mcRegistry/04010000000000000000000000000000.tabin
 vendor/app/mcRegistry/05120000000000000000000000000001.drbin
 vendor/app/mcRegistry/05120000000000000000000000000001.tlbin
 vendor/app/mcRegistry/06090000000000000000000000000000.drbin
 vendor/app/mcRegistry/06090000000000000000000000000000.tlbin
 vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin
 vendor/app/mcRegistry/07061000000000000000000000000000.tlbin
+vendor/app/mcRegistry/07090000000000000000000000000000.drbin
 vendor/app/mcRegistry/07170000000000000000000000000000.drbin
 vendor/app/mcRegistry/07170000000000000000000000000000.tlbin
 vendor/app/mcRegistry/08030000000000000000000000000000.tabin
@@ -1008,7 +997,6 @@ vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin
 vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.tlbin
 vendor/app/mcRegistry/5020170115e016302017012521300000.drbin
 vendor/app/mcRegistry/5020170115e016302017012521300000.tlbin
-vendor/app/mcRegistry/85fbf4ccc2fd4a32922a4e90c56179de.tabin
 vendor/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin
 vendor/app/mcRegistry/ce4550edbcb1662566b006ebcb303050.tabin
 vendor/app/mcRegistry/df1edda8627911e980ae507b9d9a7e7d.tabin
