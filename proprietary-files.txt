@@ -1664,6 +1664,11 @@ vendor/lib64/vendor.nxp.nxpese@1.0.so
 vendor/lib64/vendor.nxp.nxpnfc@2.0.so
 vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 
+# NFC configs
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-slm.conf
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon
