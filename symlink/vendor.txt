@@ -454,6 +454,8 @@ lib64/libtranssion_bodybeauty.so
 lib64/libTranSTPRRepair.so
 lib64/libTranSTSingleBlur.so
 lib64/libTranStSuperResolution.so
+lib64/libtranssion_beauty.so
+lib64/libtranssion_bodybeauty.so
 lib64/libvainr_model.so
 lib64/libWaterMarkProc.so
 lib64/pblcgc08a3_mipi_raw_IdxMgr.so

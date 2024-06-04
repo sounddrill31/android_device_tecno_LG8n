@@ -337,12 +337,6 @@ vendor/lib/mt6789/libCamera_s5kjn1mipiraw_Flash_Capture.so
 vendor/lib/mt6789/libCamera_s5kjn1mipiraw_Scene_Capture.so
 vendor/lib/mt6789/libCamera_s5kjn1mipiraw_Scene_Capture_4cell.so
 vendor/lib/mt6789/libCamera_s5kjn1mipiraw_Scene_Preview.so
-vendor/lib/fake_serial_yuv_IdxMgr.so
-vendor/lib/gc08a3_mipi_raw_IdxMgr.so
-vendor/lib/lib3a.ae.core.so
-vendor/lib/lib3a.ae.so
-vendor/lib/lib3a.awb.core.so
-vendor/lib/lib3a.log.so
 vendor/lib/libCamera_gc08a3mipiraw_Default_Capture.so
 vendor/lib/libCamera_gc08a3mipiraw_Default_Preview.so
 vendor/lib/libCamera_gc08a3mipiraw_Default_Video.so
@@ -796,6 +790,7 @@ vendor/lib64/mt6789/libCamera_s5kjn1mipiraw_Scene_Capture.so
 vendor/lib64/mt6789/libCamera_s5kjn1mipiraw_Scene_Capture_4cell.so
 vendor/lib64/mt6789/libCamera_s5kjn1mipiraw_Scene_Preview.so
 vendor/lib64/mt6789/libDR.so
+vendor/lib64/mt6789/libImageEval.so
 vendor/lib64/mt6789/libSonyIMX230PdafLibrary.so
 vendor/lib64/mt6789/libSonyIMX230PdafLibraryWrapper.so
 vendor/lib64/mt6789/libSonyIMX338PdafLibrary.so
@@ -1025,13 +1020,10 @@ vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
 vendor/lib64/libjpeg-alpha_vendor.so
-vendor/lib64/libmtk_drvb.so
 vendor/lib64/libmtkcam_fdWarpConvert.so 
 vendor/lib64/libmtkcam_pipelinepolicy-aov.so
 vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libsensorndkbridge.so
-vendor/lib64/libtranssion_beauty.so
-vendor/lib64/libtranssion_bodybeauty.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libvidhance_active_ois.so
 vendor/lib64/libvidhance_stabilizer.so
@@ -1803,7 +1795,6 @@ vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 vendor/lib/libfile_op.so
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.mediatek.V2.0.so
-vendor/lib64/hw/mt6789/sensors.mt6789.so
 vendor/lib64/libfile_op.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libhwm.so
