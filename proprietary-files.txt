@@ -1885,6 +1885,11 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
+# Vibrator
+vendor/bin/hw/android.hardware.vibrator-service.mediatek
+vendor/lib/hw/vibrator.default.so
+vendor/lib64/hw/vibrator.default.so
+
 # Wi-Fi
 vendor/bin/wlan_assistant
 vendor/etc/init/init.wlan_drv.rc
