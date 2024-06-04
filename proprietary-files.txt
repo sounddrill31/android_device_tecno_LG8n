@@ -996,7 +996,6 @@ vendor/lib64/libCamera_s5kjn1mipiraw_Video_720P.so
 vendor/lib64/libCamera_s5kjn1mipiraw_Video_EIS.so
 vendor/lib64/libCamera_s5kjn1mipiraw_Video_Zoom1.so
 vendor/lib64/libCamera_s5kjn1mipiraw_Video_Zoom2.so
-vendor/lib64/libImageEval.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
