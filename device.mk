@@ -232,6 +232,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
 	FrameworksResOverlay \
 	SettingsResOverlay \
+	SystemUIOverlay\
 	TelephonyOverlay
 
 # Permissions
