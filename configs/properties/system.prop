@@ -1,8 +1,15 @@
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
 # Charger
 ro.charger.enable_suspend=true
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
+
+# FUSE
+persist.sys.fuse.passtrough.enable=true
 
 # IMS
 persist.dbg.volte_avail_ovr=1
@@ -11,3 +18,12 @@ persist.dbg.wfc_avail_ovr=1
 
 # Zygote
 zygote.critical_window.minute=10
+
+# performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# SurfaceFlinger
+debug.sf.disable_client_composition_cache=1
+vendor.mtk_thumbnail_optimization=true
