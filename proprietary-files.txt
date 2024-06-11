@@ -508,6 +508,11 @@ vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so
 vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so
 vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
+vendor/lib/AVCSecureVdecCA.so
+vendor/lib/HEVCSecureVdecCA.so
+vendor/lib/VP9SecureVdecCA.so
+vendor/lib/libAVCSecureVencCA.so
+vendor/lib/libHEVCdec_sa.ca7.android.so
 #Camera64
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
@@ -1039,6 +1044,12 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
+vendor/lib64/AVCSecureVdecCA.so
+vendor/lib64/HEVCSecureVdecCA.so
+vendor/lib64/VP9SecureVdecCA.so
+vendor/lib64/libAVCSecureVencCA.so
+vendor/lib64/libBasicModule.so
+vendor/lib64/libVkLayer_mtk_rt_sdk.so
 
 # Connectivity
 vendor/bin/wmt_launcher
@@ -1200,7 +1211,8 @@ vendor/bin/hw/vendor.fptool.fingerprint@2.0-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/vendor.fptool.fingerprint@2.0-service.rc
 -vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
-vendor/etc/vintf/manifest/vendor.fptool.fingerprint-service.xml
+-vendor/etc/vintf/manifest/vendor.fptool.fingerprint-service.xml
+vendor/etc/fsfp-config.xml
 vendor/lib64/hw/fsfingerprint.default.so
 vendor/lib64/hw/vendor.fptool.fingerprint@2.0-impl.so
 vendor/lib64/vendor.fptool.fingerprint@2.0-adapter-helper.so
@@ -1578,6 +1590,9 @@ vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libstagefrighthw.so
+vendor/lib64/libadpcmdec_mtk.so
+vendor/lib64/libmp3dec_mtk.so
+vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libstagefrighthw.so
 
 # Media (C2)
