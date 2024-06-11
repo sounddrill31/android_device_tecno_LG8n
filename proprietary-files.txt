@@ -513,6 +513,7 @@ vendor/lib/HEVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
+
 #Camera64
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
@@ -1050,6 +1051,10 @@ vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libBasicModule.so
 vendor/lib64/libVkLayer_mtk_rt_sdk.so
+
+# ChipInfo
+vendor/bin/chipinfo
+vendor/etc/init/chipinfo_init.rc
 
 # Connectivity
 vendor/bin/wmt_launcher
@@ -1674,6 +1679,7 @@ vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-slm.conf
+vendor/libnfc-nxp_RF.conf
 
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
