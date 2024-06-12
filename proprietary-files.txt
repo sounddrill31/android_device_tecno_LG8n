@@ -221,6 +221,19 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
 # Camera
+vendor/bin/hw/mt6789/camerahalserver
+vendor/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service
+vendor/bin/mt6789/jpegtool
+vendor/etc/anc_siq/cache_s5kjn1_17201715_back_g97
+vendor/etc/anc_siq/dgain_mask_s5kjn1_17201715_back_g97.bin
+vendor/etc/anc_siq/siq_ocl_cache_s5kjn1_17201715_back_g97
+vendor/etc/anc_siq/siq_params_s5kjn1_17201715_back_g97.bin
+vendor/etc/anc_siq/superiq_model_s5kjn1_17201715_back_g97
+vendor/etc/init/camerahalserver.rc
+vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc
+vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml
+vendor/etc/cam3atms_profiles.xml
+vendor/etc/tran_camprofiles.xml
 vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so
