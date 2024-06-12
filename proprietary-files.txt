@@ -1582,16 +1582,28 @@ vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
 # Media
 vendor/bin/mt6789/v3avpud.mt6789
 vendor/etc/init/v3avpud.rc
+vendor/etc/mtk_omx_core.cfg
+vendor/etc/mtk_platform_codecs_config.xml
 vendor/lib/mt6789/libvcodec_utility.so
 vendor/lib/mt6789/libvcodec_utility_v3a.so
 vendor/lib/mt6789/libvcodecdrv.so
 vendor/lib/mt6789/libvcodecdrv_v3a.so
 vendor/lib/mt6789/libvpudv3a_vcodec.so
+vendor/lib/libh264dec_customize.so
+vendor/lib/libh264dec_sa.ca7.so
+vendor/lib/libh264dec_sd.ca7.so
+vendor/lib/libh264dec_se.ca7.so
+vendor/lib/libh264enc_sa.ca7.so
+vendor/lib/libmp3dec_mtk.so
+vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
+vendor/lib64/libhevce_sb.ca7.android.so
 vendor/lib64/libvpu.so
+
 
 # Media (OMX)
 vendor/lib/libMtkOmxAdpcmDec.so
@@ -1828,7 +1840,6 @@ vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 vendor/lib/librgbwlightsensor.so
 vendor/lib64/librgbwlightsensor.so
-
 
 # Sensors configs
 vendor/etc/sensors/hals.conf
