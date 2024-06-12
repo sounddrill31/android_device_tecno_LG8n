@@ -17,12 +17,6 @@ ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
 ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
-# Dalvik
-dalvik.vm.heapstartsize=16m
-dalvik.vm.heaptargetutilization=0.75
-dalvik.vm.heapminfree=512k
-dalvik.vm.heapmaxfree=8m
-
 # Display
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=27600000
