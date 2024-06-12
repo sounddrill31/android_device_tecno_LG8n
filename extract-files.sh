@@ -55,7 +55,7 @@ fi
 
 function blob_fixup {
     case "$1" in
-        vendor/bin/hw/camerahalserver)
+        vendor/bin/hw/mt6789/camerahalserver)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
@@ -63,6 +63,9 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.gnss-service.mediatek |\
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
+            ;;
+        lib64/libsink.so)
+            "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
             ;;
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
