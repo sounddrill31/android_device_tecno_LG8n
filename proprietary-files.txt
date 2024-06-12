@@ -2553,6 +2553,10 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
+# THH
+vendor/lib/libthha.so
+vendor/lib64/libthha.so
+
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
 vendor/etc/init/vibrator-mtk-default.rc
