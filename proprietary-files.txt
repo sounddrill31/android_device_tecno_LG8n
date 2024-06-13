@@ -2589,6 +2589,11 @@ vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib/libthha.so
 vendor/lib64/libthha.so
 
+# USB
+vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
+vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
+vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
+
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
 vendor/etc/init/vibrator-mtk-default.rc
