@@ -121,6 +121,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
+# Engineermode
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/system-ext-permissions-com.mediatek.engineermode.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/system-ext-permissions-com.mediatek.engineermode.xml
+
 # FastbootD
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
@@ -379,11 +383,6 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v31.so
-
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.transsion
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
