@@ -572,6 +572,7 @@ vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/etc/vintf/manifest/manifest_cameraprovider.xml
+vendor/lib/libimgsensorca.so
 
 #Camera64
 vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so
@@ -1111,6 +1112,7 @@ vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libBasicModule.so
 vendor/lib64/libVkLayer_mtk_rt_sdk.so
+vendor/lib64/libimgsensorca.so
 
 # Camera(Misc Data)
 vendor/data/camera/bemakeup/beauty_4Items/FaceMakeupV2_BrightenTeeth/mask/texcoord.txt
@@ -2527,6 +2529,8 @@ vendor/bin/hw/mtkfusionrild
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/gsm0710muxd
+vendor/etc/apdb/APDB_MT6789___W2227
+vendor/etc/apdb/APDB_MT6789___W2227_ENUM
 vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
