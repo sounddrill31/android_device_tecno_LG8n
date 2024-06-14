@@ -1899,6 +1899,25 @@ vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 
+# Engineermode
+system_ext/app/EngineerMode/EngineerMode.apk
+vendor/bin/em_hidl
+vendor/etc/init/em_hidl_user.rc
+lib/libem_support_jni.so
+lib/libem_audio_jni.so
+lib/libem_wifi_jni.so
+lib/libem_usb_jni.so
+lib/libem_aoltest_jni.so
+lib64/libem_support_jni.so
+lib64/libem_audio_jni.so
+lib64/libem_wifi_jni.so
+lib64/libem_usb_jni.so
+lib64/libem_aoltest_jni.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
+
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/vendor.fptool.fingerprint@2.0-service
