@@ -2227,7 +2227,6 @@ vendor/lib64/libviagpsrpc.so
 # IMS
 bin/vtservice
 etc/init/init.vtservice.rc
-framework/mediatek-carrier-config-manager.jar
 framework/mediatek-common.jar
 framework/mediatek-framework.jar
 framework/mediatek-ims-base.jar
