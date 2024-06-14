@@ -384,11 +384,6 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v31.so \
     prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v31.so
 
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.transsion
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     wpa_supplicant \
