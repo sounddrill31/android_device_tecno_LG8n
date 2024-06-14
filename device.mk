@@ -123,7 +123,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # Engineermode
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/system-ext-permissions-com.mediatek.engineermode.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/system-ext-permissions-com.mediatek.engineermode.xml
+    $(LOCAL_PATH)/configs/privapp-permissions-com.mediatek.engineermode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.engineermode.xml
 
 # FastbootD
 PRODUCT_PACKAGES += \
