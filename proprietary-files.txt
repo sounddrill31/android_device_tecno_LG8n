@@ -1900,7 +1900,7 @@ vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 
 # Engineermode
-system_ext/app/EngineerMode/EngineerMode.apk
+priv-app/EngineerMode/EngineerMode.apk
 vendor/bin/em_hidl
 vendor/etc/init/em_hidl_user.rc
 lib/libem_support_jni.so
