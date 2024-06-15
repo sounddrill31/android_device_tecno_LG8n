@@ -43,22 +43,16 @@ PRODUCT_PACKAGES += \
 # Allow userspace reboots
 $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 
-# AAPT
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
 # Audio
 PRODUCT_PACKAGES += \
-	android.hardware.audio.service.mediatek \
-    android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    audio.primary.default \
-    audio.r_submix.default \
-    audio.usb.default \
-    audio_policy.stub
+    audio.bluetooth.default \
+    android.hardware.bluetooth.audio-impl
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
@@ -73,18 +67,13 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 PRODUCT_COPY_FILES += \
-    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
-    
+
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth@1.1.vendor \
-    audio.bluetooth.default \
-    libbluetooth_audio_session
+    android.hardware.bluetooth@1.1.vendor
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -100,19 +89,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor
-
-# CAS
-PRODUCT_PACKAGES += \
-    android.hardware.cas@1.2-service-lazy
-
-# Codec2 modules
-PRODUCT_PACKAGES += \
-    com.android.media.swcodec \
-    libsfplugin_ccodec
-    
-# Disable SF configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
 
 # Cgroup
 PRODUCT_COPY_FILES += \
@@ -132,9 +108,6 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libutils-v32
 
-# DebugFS
-PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
@@ -145,12 +118,6 @@ PRODUCT_PACKAGES += \
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Dex
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings \
-    SystemUI \
-    SystemUIGoogle
-    
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
@@ -184,8 +151,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
-    charger_res_images_vendor
+    android.hardware.health@2.1-impl.recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -210,10 +176,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
-
-# Inherit several Android Go Configurations (Beneficial for everyone, even on non-Go devices)
-PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
 # Init files
 PRODUCT_PACKAGES += \
@@ -242,9 +204,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/mtk-tpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/mtk-tpd.kl
 
-# Enable DM file pre-opting to reduce first boot time
-PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
-
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
@@ -267,33 +226,20 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor \
-    libflatbuffers-cpp.vendor
+    libcodec2_soft_common.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
-    
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-# Misc
-PRODUCT_PACKAGES += \
-    libchrome.vendor \
-    libruy.vendor \
-    libpcap.vendor \
-    libtextclassifier_hash.vendor
 
 # NDK
 PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk.vendor \
     android.hardware.light-V1-ndk.vendor
-
-# Neural networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.0.vendor \
-    android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -312,10 +258,10 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
-    FrameworksResOverlay \
-    SettingsResOverlay \
-    SystemUIOverlay \
-    TelephonyOverlay 
+	FrameworksResOverlay \
+	SettingsResOverlay \
+	SystemUIOverlay \
+	TelephonyOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -331,7 +277,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
@@ -386,10 +331,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
-
-# Public Libraries
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Radio
 PRODUCT_PACKAGES += \
