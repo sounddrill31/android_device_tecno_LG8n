@@ -2240,7 +2240,6 @@ vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
 
 # IMS
-bin/vtservice
 etc/init/init.vtservice.rc
 framework/mediatek-common.jar
 framework/mediatek-framework.jar
@@ -2252,6 +2251,10 @@ framework/mediatek-telecom-common.jar
 framework/mediatek-telephony-base.jar
 framework/mediatek-telephony-common.jar
 framework/mediatek-wfo-legacy.jar
+lib/libmtk_vt_wrapper.so
+lib/libmtkperf_client.so
+lib/libvcodec_cap.so
+lib/libvcodec_capenc.so
 lib64/libcomutils.so
 lib64/libimsma.so
 lib64/libimsma_adapt.so
@@ -2265,7 +2268,6 @@ lib64/libsink.so
 lib64/libsource.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
-lib64/libvsim-adaptor-client.so
 lib64/libvt_avsync.so
 priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
@@ -2604,6 +2606,7 @@ vendor/lib64/libstorage_otp.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libtrm.so
 vendor/lib64/libwpfa.so
+vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
