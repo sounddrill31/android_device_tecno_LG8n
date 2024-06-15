@@ -9,6 +9,10 @@ lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so
 lib/hw/vulkan.mali.so
+lib/lib3a.ae.so
+lib/lib3a.aishutter.models.so
+lib/lib3a.awb.core.so
+lib/lib3a.log.so
 lib/arm.graphics-V1-ndk_platform.so
 lib/fake_serial_yuv_IdxMgr.so
 lib/fake_serial_yuv_tuning.so
@@ -16,6 +20,7 @@ lib/gc08a3_mipi_raw_IdxMgr.so
 lib/gc08a3_mipi_raw_tuning.so
 lib/libaiselector.so
 lib/libaalservice.so
+lib/libaal_cust_func.so
 lib/libCamera_fakeserialyuv_E2EHDR_Preview.so
 lib/libCamera_fakeserialyuv_E2EHDR_Video.so
 lib/libCamera_fakeserialyuv_Face_Capture.so
@@ -128,6 +133,7 @@ lib/pbros5kjn1_mipi_raw_IdxMgr.so
 lib/s5kjn1_mipi_raw_IdxMgr.so
 lib/s5kjn1_mipi_raw_tuning.so
 lib64/egl/libGLES_mali.so
+lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
@@ -167,6 +173,7 @@ lib64/lib3a.n3d3a.so
 lib64/lib3a.sensors.color.so
 lib64/lib3a.sensors.flicker.so
 lib64/libaalservice.so
+lib64/libaal_cust_func.so
 lib64/libacdk.so
 lib64/libaiawb_moon.so
 lib64/libaiawb_p1ggm.so
@@ -177,6 +184,7 @@ lib64/libaibc_tuning_p3.so
 lib64/libaibc_tuning_p4.so
 lib64/libaidepth_tuning.so
 lib64/libaiselector.so
+lib64/libamipengine.so
 lib64/libcalculatesharpness.so
 lib64/libcam.afhal.so
 lib64/libcam.chdr.so
@@ -388,6 +396,7 @@ lib64/libmtkcam_pipelinepolicy.so
 lib64/libmtkcam_pipelinepolicy_factory.so
 lib64/libmtkcam_pipelinepolicy-security.so
 lib64/libmtkcam_pipelinepolicy-smvr.so
+lib64/libmtkcam_pipeline_fbm.so
 lib64/libmtkcam_prerelease.so
 lib64/libmtkcam_rsc.so
 lib64/libmtkcam_scenariorecorder.so
