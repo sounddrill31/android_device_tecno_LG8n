@@ -266,6 +266,7 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
 # Camera
+vendor/bin/mt6789/dumpfaultd.mt6789
 vendor/bin/hw/mt6789/camerahalserver
 vendor/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service
 vendor/bin/mt6789/jpegtool
@@ -573,8 +574,11 @@ vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/etc/vintf/manifest/manifest_cameraprovider.xml
 vendor/lib/libimgsensorca.so
+vendor/lib/mt6789/libaal_cust_func.so
+vendor/lib/libispcameraca.so
 
-#Camera64
+# Camera(lib64)
+system_ext/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
@@ -906,6 +910,7 @@ vendor/lib64/mt6789/libcameracustom.camera.sensors.so
 vendor/lib64/mt6789/libcameracustom.camera_exif.so
 vendor/lib64/mt6789/libcameracustom.flashlight.so
 vendor/lib64/mt6789/libcameracustom.plugin.so
+vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/lib3a.ae.pipe.so
 vendor/lib64/libCamera_gc08a3mipiraw_Default_Capture.so
 vendor/lib64/libCamera_gc08a3mipiraw_Default_Preview.so
@@ -1113,6 +1118,14 @@ vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libBasicModule.so
 vendor/lib64/libVkLayer_mtk_rt_sdk.so
 vendor/lib64/libimgsensorca.so
+vendor/lib64/libispcameraca.so
+vendor/lib64/libancbase_848.so
+vendor/lib64/libancbase.so
+vendor/lib64/libanc_hdr.so
+vendor/lib64/libimagebuffer_wrapper.so
+vendor/lib64/libanc_hdr_adapter_s5kjn1_17201715_back_g97.so
+vendor/lib64/libmegface.so
+
 
 # Camera(Misc Data)
 vendor/data/camera/bemakeup/beauty_4Items/FaceMakeupV2_BrightenTeeth/mask/texcoord.txt
@@ -2417,8 +2430,19 @@ vendor/etc/init/md_monitor.rc
 vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
+vendor/lib/libhydra.so
+vendor/lib/libhyperion_hap_ca.so
+vendor/lib/libprotobuf-cpp-lite-3.9.1.so
+vendor/lib/libprotobuf-cpp-full-3.9.1.so
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so
+vendor/lib64/libhydra.so
+vendor/lib64/libhyperion_hap_ca.so
+vendor/lib64/libtranlog.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so
+vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
+vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
