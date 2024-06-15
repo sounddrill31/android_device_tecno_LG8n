@@ -1757,6 +1757,7 @@ vendor/lib/libion_ulit.so
 vendor/lib/libladder.so
 vendor/lib/libmml.so
 vendor/lib/libpqframework.so
+vendor/lib/libOpenCL.so
 vendor/lib/libudf.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
@@ -2296,6 +2297,7 @@ vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
 -vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
 
 # Media
+vendor/bin/vpud
 vendor/bin/mt6789/v3avpud.mt6789
 vendor/etc/init/v3avpud.rc
 vendor/etc/mtk_omx_core.cfg
@@ -2340,6 +2342,7 @@ vendor/lib/libvpud_vcodec.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libadpcmdec_mtk.so
+vendor/lib64/libbwc.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libheichal.so
@@ -2423,7 +2426,7 @@ vendor/etc/init/gbe.rc
 vendor/etc/init/init.otg.rc
 vendor/etc/init/md_monitor.rc
 vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
+-vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib/libhydra.so
 vendor/lib/libhyperion_hap_ca.so
@@ -2438,6 +2441,15 @@ vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
+
+# MMAGENT
+vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
+vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
+vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
+vendor/lib64/libmmagent.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
