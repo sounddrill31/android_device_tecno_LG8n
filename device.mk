@@ -242,10 +242,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
-
+    
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+# Misc
+PRODUCT_PACKAGES += \
+    libchrome.vendor \
+    libruy.vendor \
+    libpcap.vendor \
+    libtextclassifier_hash.vendor
 
 # Neural networks
 PRODUCT_PACKAGES += \
@@ -273,6 +280,10 @@ PRODUCT_PACKAGES += \
 	SettingsResOverlay \
 	SystemUIOverlay \
 	TelephonyOverlay
+
+# Pcap
+PRODUCT_PACKAGES += \
+    libpcap.vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -355,11 +366,12 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    libsensorndkbridge \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.1.vendor \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.frameworks.sensorservice@1.0.vendor \
-    libsensorndkbridge
+    android.hardware.sensors@2.1-service.multihal \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
