@@ -2763,8 +2763,8 @@ vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
 vendor/etc/init/vibrator-mtk-default.rc
 vendor/etc/vintf/manifest/vibrator-mtk-default.xml
-vendor/lib/hw/vibrator.default.so
-vendor/lib64/hw/vibrator.default.so
+vendor/lib/libvibrator.so
+vendor/lib64/libvibrator.so
 
 # Wi-Fi
 vendor/bin/wlan_assistant
