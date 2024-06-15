@@ -2441,6 +2441,22 @@ vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
+vendor/lib/libmtkhardware_legacy.so
+vendor/lib64/libmtkhardware_legacy.so
+vendor/lib/libmtk_bsg.so
+vendor/lib64/libmtk_bsg.so
+vendor/lib/libminiui.so
+vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
+vendor/lib/mt6789/libmtk_drvb.so
+vendor/lib64/mt6789/libmtk_drvb.so
+vendor/lib64/libheichal.so
+vendor/lib64/libimagebuffer_wrapper.so
+vendor/lib64/libminiui.so
+vendor/lib64/libmtkisp_metadata.so
+vendor/lib64/libmtkisp_metadata_v2.so
+vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
+vendor/lib/libpixelflinger.so
+vendor/lib64/libpixelflinger.so
 
 # MMAGENT
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
