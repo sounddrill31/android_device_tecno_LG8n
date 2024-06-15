@@ -1,7 +1,6 @@
 bin/hw/camerahalserver
 bin/jpegtool
 bin/v3avpud.mt6789
-bin/dumpfaultd.mt6789
 lib/egl/libGLES_mali.so
 lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
