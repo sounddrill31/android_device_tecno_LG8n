@@ -1701,11 +1701,6 @@ vendor/data/camera/watermark/watermark_640x480.nv21
 vendor/data/camera/watermark/watermark_640x480.yuyv
 vendor/data/camera/watermark/watermark_config
 
-# Charger
-bin/kpoc_charger
-etc/init/kpoc_charger.rc
-lib64/libshowlogo.so
-
 # ChipInfo
 vendor/bin/chipinfo
 vendor/etc/init/chipinfo_init.rc
