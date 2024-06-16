@@ -154,26 +154,23 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>6</item>
-        <item>18</item>
-        <item>34</item>
-        <item>82</item>
-        <item>128</item>
-        <item>256</item>
-        <item>384</item>
-        <item>512</item>
-        <item>640</item>
-        <item>768</item>
-        <item>896</item>
-        <item>1536</item>
-        <item>2560</item>
-        <item>3584</item>
-        <item>4608</item>
-        <item>5632</item>
-        <item>7168</item>
-        <item>8192</item>
-        <item>8704</item>
-        <item>9728</item>
+         <item>128</item>
+         <item>256</item>
+         <item>384</item>
+         <item>512</item>
+         <item>640</item>
+         <item>768</item>
+         <item>896</item>
+         <item>1024</item>
+         <item>2048</item>
+         <item>4096</item>
+         <item>6144</item>
+         <item>8192</item>
+         <item>10240</item>
+         <item>12288</item>
+         <item>14336</item>
+         <item>16384</item>
+         <item>18432</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
@@ -308,6 +305,9 @@
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
+
+    <!-- Whether device uses power button fingerprint sensor or not -->
+    <bool name="config_is_powerbutton_fps">true</bool>
 
     <!-- Boolean indicating USSD over IMS is allowed.
      If it is not supported due to modem limitations, USSD send over the CS pipe instead.-->
