@@ -1,3 +1,4 @@
+bin/dumpfaultd.mt6789
 bin/hw/camerahalserver
 bin/jpegtool
 bin/v3avpud.mt6789
@@ -439,6 +440,8 @@ lib64/libtf_asd_lib.so
 lib64/libtflite_native_gainference.so
 lib64/libtflite_native_inference.so
 lib64/libtflite_native_seginference.so
+lib64/libTran_Log.so
+lib64/libTran_mtkPowerAPI.so
 lib64/libTranArcFilter.so
 lib64/libTranArcFlashNew.so
 lib64/libTranArcHDR.so
@@ -453,9 +456,7 @@ lib64/libTranEyeDetect.so
 lib64/libTranFaceBeauty.so
 lib64/libTranGenderDetect.so
 lib64/libTranHumanLight.so
-lib64/libTran_Log.so
 lib64/libTranMegHumanEffect.so
-lib64/libTran_mtkPowerAPI.so
 lib64/libTranPlatHW.so
 lib64/libTranSlimBody.so
 lib64/libTranSmartDetection.so
