@@ -94,6 +94,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdng_sdk.vendor
 
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
+
+# Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec
+    
+# Disable SF configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Cgroup
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -112,6 +125,9 @@ PRODUCT_PACKAGES += \
     libdrm.vendor \
     libutils-v32
 
+# DebugFS
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
@@ -122,6 +138,12 @@ PRODUCT_PACKAGES += \
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI \
+    SystemUIGoogle
+    
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
@@ -254,6 +276,10 @@ PRODUCT_PACKAGES += \
     libpcap.vendor \
     libtextclassifier_hash.vendor
 
+# MTK In-call service
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 # Neural networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.0.vendor \
@@ -352,8 +378,16 @@ PRODUCT_COPY_FILES += \
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# PowerOffAlarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
+
+# Public Libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Radio
 PRODUCT_PACKAGES += \
