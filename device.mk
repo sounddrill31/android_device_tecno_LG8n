@@ -254,6 +254,10 @@ PRODUCT_PACKAGES += \
     libpcap.vendor \
     libtextclassifier_hash.vendor
 
+# MTK In-call service
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 # Neural networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.0.vendor \
