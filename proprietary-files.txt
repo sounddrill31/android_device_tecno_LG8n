@@ -602,6 +602,15 @@ vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so
 vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
+vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so
+vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so
+vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so
+vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so
+vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
+vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so
+vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
+vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
+vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/mt6789/fake_serial_yuv_IdxMgr.so
 vendor/lib64/mt6789/fake_serial_yuv_tuning.so
@@ -1109,11 +1118,16 @@ vendor/lib64/libcamalgo.eis.so
 vendor/lib64/libcamalgo.fdft.so
 vendor/lib64/libcamalgo.fsc.so
 vendor/lib64/libcamalgo.gyro.so
+vendor/lib64/libcamalgo.hdr10p.so
 vendor/lib64/libcamalgo.lmv.so
+vendor/lib64/libcamalgo.mcnr.so
 vendor/lib64/libcamalgo.n3d.so
+vendor/lib64/libcamalgo.nr.so
 vendor/lib64/libcamalgo.platform.so
 vendor/lib64/libcamalgo.utility.so
+vendor/lib64/libcamalgo.vsdofUtil.so
 vendor/lib64/libcamalgo.warp.so
+vendor/lib64/libcamalgo.WarpMapResizer.so
 vendor/lib64/libgz_uree.so
 vendor/lib64/libheichal.so
 vendor/lib64/libion_mtk.so
@@ -1130,6 +1144,7 @@ vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so
+vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so
@@ -2395,6 +2410,8 @@ vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
+vendor/lib/libvcodec_utility_plat.mt6789.so
+vendor/lib/libvcodec_utility_plat.mt6983.so
 
 # Media (OMX)
 vendor/lib/libMtkOmxAdpcmDec.so
@@ -2481,6 +2498,18 @@ vendor/lib64/libmtkisp_metadata_v2.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib/libpixelflinger.so
 vendor/lib64/libpixelflinger.so
+vendor/lib64/libasn1c_core.so
+vendor/lib64/libasn1c_mapi.so
+vendor/lib64/libasn1c_mdmi.so
+vendor/lib/libcharon-ss.so
+vendor/lib/libmmprofile.so
+vendor/lib64/lib_eara_io_scndet.so
+vendor/lib64/lib_eara_io_service.so
+vendor/lib64/lib_eara_io_systracer.so
+vendor/lib64/lib_eara_io_timer.so
+vendor/lib64/lib_eara_io_util.so
+vendor/lib64/lib_iir.so
+vendor/lib64/libflatbuffers-cpp.so
 
 # MMAGENT
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
