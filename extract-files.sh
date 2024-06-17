@@ -78,15 +78,22 @@ function blob_fixup {
         vendor/lib64/hw/audio.primary.mt6789.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             ;;
+        vendor/lib*/libspeech_enh_lib.so|\
+        vendor/lib64/libwifi-hal-mtk.so|\
+        vendor/lib*/hw/power.mt6789.so|\
+        vendor/lib*/hw/sound_trigger.primary.mt6789.so|\
+        vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
+            "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
+            ;;
         vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc)
             sed -i 's/@1.2-mediatek/@1.2-mediatek-64b/g' "${2}"
             ;;
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
             "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
             ;;
-        vendor/lib64/android.hardware.power-service-mediatek.so)
-            "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
-            ;;
+        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+        "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
+        ;;
     esac
 }
 
