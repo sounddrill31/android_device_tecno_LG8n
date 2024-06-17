@@ -49,18 +49,19 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
+    android.hardware.audio.service.mediatek \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.service \
+    android.hardware.audio@7.0-impl \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    android.hardware.bluetooth.audio-impl
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
-    libbluetooth_audio_session \
     libalsautils \
     libnbaio_mono \
     libtinycompress \
@@ -71,13 +72,18 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
-
+    
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1.vendor
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth@1.1.vendor \
+    audio.bluetooth.default \
+    libbluetooth_audio_session
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -123,6 +129,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     libdrm.vendor \
+	libhwc2on1adapter:64 \
+	libhwc2onfbadapter:64 \
     libutils-v32
 
 # DebugFS
@@ -177,7 +185,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery
+    android.hardware.health@2.1-impl.recovery \
+    charger_res_images_vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -212,7 +221,6 @@ PRODUCT_PACKAGES += \
     fstab.mt6789 \
     fstab.mt6789.vendor_ramdisk \
     init_connectivity.rc \
-    init.aee.rc \
     init.cgroup.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
@@ -225,6 +233,7 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.recovery.usb.rc \
     init.sensor_2_0.rc \
+    init.safailnet.rc \
     ueventd.mt6789.rc
 
 # Include GSI keys
@@ -254,12 +263,20 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+	android.hardware.media.c2@1.0.vendor:64 \
+	android.hardware.media.c2@1.1.vendor:64 \
+	android.hardware.media.c2@1.2.vendor:64 \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
     libavservices_minijail_vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor
+    libcodec2_soft_common.vendor \
+	libcodec2_hidl_plugin:64 \
+	libcodec2_vndk.vendor:64 \
+	libeffects:64 \
+    libeffectsconfig.vendor:64 \
+    libflatbuffers-cpp.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -302,15 +319,19 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
-	FrameworksResOverlay \
-	SettingsResOverlay \
-	SystemUIOverlay \
-	TelephonyOverlay
+    FrameworksResOverlay \
+    SettingsResOverlay \
+    SystemUIOverlay \
+    TelephonyOverlay 
+
+# Lineage-Specific Overlays
+PRODUCT_PACKAGES += \
+	ApertureOverlay
 
 # Pcap
 PRODUCT_PACKAGES += \
     libpcap.vendor
-
+    
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -361,13 +382,9 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
-    android.hardware.power-V2-ndk_platform.vendor \
-    android.hardware.power@1.0.vendor \
-    android.hardware.power@1.1.vendor \
-    android.hardware.power@1.2.vendor \
+    android.hardware.power-V2-ndk.vendor \
+    android.hardware.power@1.3.vendor \
     libmtkperf_client_vendor \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 PRODUCT_COPY_FILES += \
