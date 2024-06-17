@@ -73,6 +73,11 @@ function blob_fixup {
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
+        vendor/lib/hw/audio.primary.mt6789.so)
+            ;&
+        vendor/lib64/hw/audio.primary.mt6789.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
+            ;;
         vendor/lib64/android.hardware.power-service-mediatek.so)
             "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
             ;;
