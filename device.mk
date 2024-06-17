@@ -129,6 +129,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     libdrm.vendor \
+	libhwc2on1adapter:64 \
+	libhwc2onfbadapter:64 \
     libutils-v32
 
 # DebugFS
@@ -261,12 +263,19 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+	android.hardware.media.c2@1.0.vendor:64 \
+	android.hardware.media.c2@1.1.vendor:64 \
+	android.hardware.media.c2@1.2.vendor:64 \
     libcodec2_hidl@1.1.vendor \
     libcodec2_hidl@1.2.vendor \
     libavservices_minijail_vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
     libcodec2_soft_common.vendor \
+	libcodec2_hidl_plugin:64 \
+	libcodec2_vndk.vendor:64 \
+	libeffects:64 \
+    libeffectsconfig.vendor:64 \
     libflatbuffers-cpp.vendor
 
 PRODUCT_COPY_FILES += \
