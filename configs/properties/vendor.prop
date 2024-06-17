@@ -16,6 +16,9 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bt.platform=connac1x
 ro.vendor.mtk.bt_sap_enable=true
 
+# Camera
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,tw.nekomimi.nekogram
+
 # Connsys
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
