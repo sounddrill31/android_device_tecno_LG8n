@@ -2494,7 +2494,6 @@ vendor/lib64/lib_iir.so
 vendor/lib64/libasn1c_core.so
 vendor/lib64/libasn1c_mapi.so
 vendor/lib64/libasn1c_mdmi.so
-vendor/lib64/libflatbuffers-cpp.so
 vendor/lib64/libheichal.so
 vendor/lib64/libhydra.so
 vendor/lib64/libhyperion_hap_ca.so
