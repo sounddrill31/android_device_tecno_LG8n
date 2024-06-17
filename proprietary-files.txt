@@ -2416,6 +2416,7 @@ vendor/lib64/libvpu5.so
 # Media (OMX)
 vendor/lib/libMtkOmxAdpcmDec.so
 vendor/lib/libMtkOmxAlacDec.so
+vendor/lib/libMtkOmxApeDec.so
 vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
