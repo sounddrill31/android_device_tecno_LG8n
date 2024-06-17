@@ -55,12 +55,13 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    android.hardware.bluetooth.audio-impl
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub
 
 PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
-    libbluetooth_audio_session \
     libalsautils \
     libnbaio_mono \
     libtinycompress \
@@ -79,7 +80,10 @@ PRODUCT_COPY_FILES += \
     
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1.vendor
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth@1.1.vendor \
+    audio.bluetooth.default \
+    libbluetooth_audio_session
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
