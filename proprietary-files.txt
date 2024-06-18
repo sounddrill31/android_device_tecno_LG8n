@@ -952,6 +952,7 @@ vendor/lib64/libCamera_s5kjn1mipiraw_Video_Zoom2.so
 vendor/lib64/libcam3_tranelapsedtime.so
 vendor/lib64/libcam3_tranpriorityctrl.so
 vendor/lib64/libcam3_transerverengine.so
+vendor/lib64/libcam.seninfn3d.so
 vendor/lib64/libcamalgo.3dnr.so
 vendor/lib64/libcamalgo.WarpMapResizer.so
 vendor/lib64/libcamalgo.dngop.so
