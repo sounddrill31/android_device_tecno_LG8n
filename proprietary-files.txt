@@ -952,6 +952,7 @@ vendor/lib64/libCamera_s5kjn1mipiraw_Video_Zoom2.so
 vendor/lib64/libcam3_tranelapsedtime.so
 vendor/lib64/libcam3_tranpriorityctrl.so
 vendor/lib64/libcam3_transerverengine.so
+vendor/lib64/libcam.seninfn3d.so
 vendor/lib64/libcamalgo.3dnr.so
 vendor/lib64/libcamalgo.WarpMapResizer.so
 vendor/lib64/libcamalgo.dngop.so
@@ -982,6 +983,8 @@ vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 
 # Camera (Hard Dependencies)
+system_ext/lib64/libArcFilter.so
+system_ext/lib64/libarcsoft_frc.so
 vendor/bin/mt6789/dumpfaultd.mt6789
 vendor/bin/mt6789/jpegtool
 vendor/etc/anc_siq/cache_s5kjn1_17201715_back_g97
@@ -1037,6 +1040,8 @@ vendor/lib/libasn1c_mapi.so
 vendor/lib/libasn1c_mdmi.so
 vendor/lib/libcam3_transerverengine.so
 vendor/lib/libcamalgo.utility.so
+vendor/lib/libcharon-ss.so
+vendor/lib/libdynamiclog.so
 vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_sa.ca7.so
@@ -1233,6 +1238,9 @@ vendor/lib64/libasn1c_core.so
 vendor/lib64/libasn1c_mapi.so
 vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libc++_shared.so
+vendor/lib64/libcharon-ss.so
+vendor/lib64/libdre.so
+vendor/lib64/libdynamiclog.so
 vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libeffects.so
 vendor/lib64/libeffectsconfig.so
@@ -1271,6 +1279,7 @@ vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so
 vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
+vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 
 # Camera (TranCam Dependencies)
 system_ext/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
@@ -2367,18 +2376,17 @@ vendor/lib64/libviagpsrpc.so
 # IMS
 bin/vtservice
 etc/init/init.vtservice.rc
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
+framework/mediatek-common.jar
+framework/mediatek-framework.jar
+framework/mediatek-ims-base.jar
+framework/mediatek-ims-common.jar
 framework/mediatek-ims-extension-plugin.jar
 framework/mediatek-services.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
--framework/mediatek-telephony-common.jar
+framework/mediatek-telecom-common.jar
+framework/mediatek-telephony-base.jar
+framework/mediatek-telephony-common.jar
 framework/mediatek-wfo-legacy.jar
-lib/libmtk_vt_wrapper.so
-lib/libmtkavenhancements.so
+lib64/libcomutils.so
 lib64/libimsma.so
 lib64/libimsma_adapt.so
 lib64/libimsma_rtp.so
@@ -2393,9 +2401,9 @@ lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 lib64/libvsim-adaptor-client.so
 lib64/libvt_avsync.so
--priv-app/ImsService/ImsService.apk
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:lib/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+priv-app/ImsService/ImsService.apk
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
@@ -2589,7 +2597,6 @@ vendor/etc/init/vendor.transsion.hardware.hyperion.hap@1.0-service.rc
 -vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
 vendor/lib/mt6789/libmtk_drvb.so
 vendor/lib/libccci_util.so
-vendor/lib/libcharon-ss.so
 vendor/lib/libhydra.so
 vendor/lib/libhyperion_hap_ca.so
 vendor/lib/libminiui.so
@@ -2627,6 +2634,8 @@ vendor/lib64/libprotobuf-cpp-full-3.9.1.so
 vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/libtranlog.so
 vendor/lib64/libwo.so
+vendor/lib64/vendor.transsion.hardware.hyperion.hap@1.0.so
+vendor/lib64/vendor.transsion.hardware.transtorage.storage@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so
