@@ -86,6 +86,9 @@ function blob_fixup {
         vendor/lib64/hw/audio.primary.mt6789.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             ;;
+        vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
         vendor/lib*/libspeech_enh_lib.so|\
         vendor/lib64/libwifi-hal-mtk.so|\
         vendor/lib*/hw/power.mt6789.so|\
