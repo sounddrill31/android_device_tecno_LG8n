@@ -26,6 +26,19 @@ vendor/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 
 # Audio
+vendor/etc/AudioLog_dynamic.xml
+vendor/lib/libaudioclient_aidl_conversion.so
+vendor/lib/libaudiosmartpamtk.so
+vendor/lib/audio_common-aidl-cpp.so
+vendor/lib/vendor.mediatek.hardware.audio@6.1.so
+vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
+vendor/lib/soundfx/libaudiopreprocessing.so
+vendor/lib/soundfx/libaudiopreprocessing_mtk.so
+vendor/lib64/soundfx/libaudiopreprocessing.so
+vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
+vendor/lib/audioclient-types-aidl-cpp.so
+vendor/lib64/audio_common-aidl-cpp.so
+vendor/lib64/audioclient-types-aidl-cpp.so
 vendor/bin/audiocmdservice_atci
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/lib/hw/audio.primary.mediatek.so
@@ -73,6 +86,7 @@ vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
 vendor/lib64/libaudio_param_parser-vnd.so
+vendor/lib64/libaudioclient_aidl_conversion.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocomponentengine_vendor.so
@@ -83,6 +97,7 @@ vendor/lib64/libaudiofmtconv.so
 vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
+vendor/lib64/libaudiosmartpamtk.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
