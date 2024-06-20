@@ -292,8 +292,6 @@ PRODUCT_COPY_FILES += \
 # Misc
 PRODUCT_PACKAGES += \
     libchrome.vendor \
-    libruy.vendor \
-    libpcap.vendor \
     libtextclassifier_hash.vendor
 
 # MTK In-call service
@@ -330,10 +328,6 @@ PRODUCT_PACKAGES += \
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
 	ApertureOverlay
-
-# Pcap
-PRODUCT_PACKAGES += \
-    libpcap.vendor
     
 # Permissions
 PRODUCT_COPY_FILES += \
