@@ -2770,6 +2770,23 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 vendor/bin/hw/mtkfusionrild
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
+vendor/bin/AgentTest
+vendor/bin/ccci_fsd
+vendor/bin/charon
+vendor/bin/doeapp-sat
+vendor/bin/dtc_vendor
+vendor/bin/epdg_wod
+vendor/bin/factory
+vendor/bin/gsm0710muxd
+vendor/bin/md_monitor
+vendor/bin/md_monitor_ctrl
+vendor/bin/mnld
+vendor/bin/mrdump_tool
+vendor/bin/muxreport
+vendor/bin/starter
+vendor/bin/stp_dump3
+vendor/bin/stroke
+vendor/bin/xcap
 vendor/bin/gsm0710muxd
 vendor/etc/apdb/APDB_MT6789___W2227
 vendor/etc/apdb/APDB_MT6789___W2227_ENUM
@@ -2824,6 +2841,10 @@ vendor/lib64/libtrm.so
 vendor/lib64/libwpfa.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
+vendor/lib64/libgwsd-ril.so
+vendor/lib64/libgwsdv2-ril.so
+vendor/lib64/libgwsdv3-ril.so
+vendor/lib64/libvia-ril.so
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl
