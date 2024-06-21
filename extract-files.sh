@@ -58,6 +58,9 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.vibrator-service.mediatek)
             "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "$2"
             ;;
+        vendor/bin/hw/android.hardware.lights-service.mediatek)
+            "$PATCHELF" --replace-needed "android.hardware.light-V1-ndk_platform.so" "android.hardware.light-V1-ndk.so" "$2"
+            ;;
         vendor/bin/hw/mt6789/camerahalserver)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
@@ -73,10 +76,18 @@ function blob_fixup {
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
+        vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
+            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v31.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
+            ;;
         vendor/lib/hw/audio.primary.mt6789.so)
             ;&
         vendor/lib64/hw/audio.primary.mt6789.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
+            ;;
+        vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc)
+            sed -i 's/start/enable/' "$2"
             ;;
         vendor/lib*/libspeech_enh_lib.so|\
         vendor/lib64/libwifi-hal-mtk.so|\
@@ -94,6 +105,9 @@ function blob_fixup {
         vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
         "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
         ;;
+       vendor/lib*/hw/android.hardware.thermal@2.0-impl.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 

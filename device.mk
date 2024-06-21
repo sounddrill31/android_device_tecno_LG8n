@@ -262,7 +262,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.transsion
+    android.hardware.light-V1-ndk.vendor
 
 # Media
 PRODUCT_PACKAGES += \
@@ -292,8 +292,6 @@ PRODUCT_COPY_FILES += \
 # Misc
 PRODUCT_PACKAGES += \
     libchrome.vendor \
-    libruy.vendor \
-    libpcap.vendor \
     libtextclassifier_hash.vendor
 
 # MTK In-call service
@@ -330,10 +328,6 @@ PRODUCT_PACKAGES += \
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
 	ApertureOverlay
-
-# Pcap
-PRODUCT_PACKAGES += \
-    libpcap.vendor
     
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -448,7 +442,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.transsion
+    android.hardware.usb@1.3.vendor \
+    android.hardware.usb.gadget@1.1.vendor
 
 # VNDK 
 PRODUCT_PACKAGES += \

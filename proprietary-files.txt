@@ -28,14 +28,20 @@ vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 # Audio
 vendor/bin/audiocmdservice_atci
 vendor/etc/init/audiocmdservice_atci.rc
+vendor/etc/AudioLog_dynamic.xml
 vendor/lib/hw/audio.primary.mediatek.so
 vendor/lib/hw/audio.r_submix.mediatek.so
 vendor/lib/hw/awinic.audio.effect.so
+vendor/lib/soundfx/libaudiopreprocessing.so
+vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib/audio_common-aidl-cpp.so
+vendor/lib/audio_common-aidl-cpp.so
+vendor/lib/audioclient-types-aidl-cpp.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
 vendor/lib/libaudio_param_parser-vnd.so
+vendor/lib/libaudioclient_aidl_conversion.so
 vendor/lib/libaudiocompensationfilter_vendor.so
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocomponentengine_vendor.so
@@ -46,6 +52,7 @@ vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudiofoundation.so
 vendor/lib/libaudioloudc.so
 vendor/lib/libaudioprimarydevicehalifclient.so
+vendor/lib/libaudiosmartpamtk.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaurisysdemo.so
 vendor/lib/libbessound_hd_mtk_vendor.so
@@ -66,13 +73,19 @@ vendor/lib/libvow_ap_test_ha.so
 vendor/lib/libvow_ap_test_hh.so
 vendor/lib/libvow_ap_test_nn.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
+vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib64/hw/audio.primary.mediatek.so
 vendor/lib64/hw/audio.r_submix.mediatek.so
+vendor/lib64/soundfx/libaudiopreprocessing.so
+vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
+vendor/lib64/audio_common-aidl-cpp.so
+vendor/lib64/audioclient-types-aidl-cpp.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
 vendor/lib64/libaudio_param_parser-vnd.so
+vendor/lib64/libaudioclient_aidl_conversion.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocomponentengine_vendor.so
@@ -83,6 +96,7 @@ vendor/lib64/libaudiofmtconv.so
 vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
+vendor/lib64/libaudiosmartpamtk.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
@@ -102,6 +116,7 @@ vendor/lib64/libvow_ap_test_dd.so
 vendor/lib64/libvow_ap_test_ha.so
 vendor/lib64/libvow_ap_test_hh.so
 vendor/lib64/libvow_ap_test_nn.so
+vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
@@ -258,9 +273,9 @@ vendor/bin/hw/mt6789/camerahalserver
 vendor/etc/init/camerahalserver.rc
 
 # Camera (lib)
+vendor/etc/vintf/manifest/manifest_cameraprovider.xml
 vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
-vendor/etc/vintf/manifest/manifest_cameraprovider.xml
 vendor/lib/mt6789/fake_serial_yuv_IdxMgr.so
 vendor/lib/mt6789/fake_serial_yuv_tuning.so
 vendor/lib/mt6789/gc08a3_mipi_raw_IdxMgr.so
@@ -949,10 +964,10 @@ vendor/lib64/libCamera_s5kjn1mipiraw_Video_720P.so
 vendor/lib64/libCamera_s5kjn1mipiraw_Video_EIS.so
 vendor/lib64/libCamera_s5kjn1mipiraw_Video_Zoom1.so
 vendor/lib64/libCamera_s5kjn1mipiraw_Video_Zoom2.so
+vendor/lib64/libcam.seninfn3d.so
 vendor/lib64/libcam3_tranelapsedtime.so
 vendor/lib64/libcam3_tranpriorityctrl.so
 vendor/lib64/libcam3_transerverengine.so
-vendor/lib64/libcam.seninfn3d.so
 vendor/lib64/libcamalgo.3dnr.so
 vendor/lib64/libcamalgo.WarpMapResizer.so
 vendor/lib64/libcamalgo.dngop.so
@@ -1239,9 +1254,9 @@ vendor/lib64/libasn1c_mapi.so
 vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcharon-ss.so
+vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libdre.so
 vendor/lib64/libdynamiclog.so
-vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libeffects.so
 vendor/lib64/libeffectsconfig.so
 vendor/lib64/libhdrvideo.so
@@ -1865,6 +1880,10 @@ vendor/data/camera/watermark/watermark_640x480.nv21
 vendor/data/camera/watermark/watermark_640x480.yuyv
 vendor/data/camera/watermark/watermark_config
 
+# Charger
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+
 # ChipInfo
 vendor/bin/chipinfo
 vendor/etc/init/chipinfo_init.rc
@@ -1988,6 +2007,7 @@ vendor/lib64/libladder.so
 vendor/lib64/libmml.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libudf.so
+vendor/lib64/libVkLayer_mtk_rt_sdk.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
@@ -2376,16 +2396,22 @@ vendor/lib64/libviagpsrpc.so
 # IMS
 bin/vtservice
 etc/init/init.vtservice.rc
-framework/mediatek-common.jar
-framework/mediatek-framework.jar
-framework/mediatek-ims-base.jar
-framework/mediatek-ims-common.jar
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
+-framework/mediatek-ims-common.jar
 framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-services.jar
-framework/mediatek-telecom-common.jar
-framework/mediatek-telephony-base.jar
-framework/mediatek-telephony-common.jar
+framework/mediatek-ims-legacy.jar
+-framework/mediatek-telecom-common.jar
+-framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-common.jar
 framework/mediatek-wfo-legacy.jar
+lib/libmtk_vt_wrapper.so
+lib/libmtkavenhancements.so
+lib/libmtkperf_client.so
+lib/libvcodec_cap.so
+lib/libvcodec_capenc.so
+lib/libvsim-adaptor-client.so
 lib64/libcomutils.so
 lib64/libimsma.so
 lib64/libimsma_adapt.so
@@ -2393,6 +2419,8 @@ lib64/libimsma_rtp.so
 lib64/libimsma_socketwrapper.so
 lib64/libmtk_vt_service.so
 lib64/libmtk_vt_wrapper.so
+lib64/libmtk_vt_wrapper.so
+lib64/libmtkavenhancements.so
 lib64/libmtkperf_client.so
 lib64/libsignal.so
 lib64/libsink.so
@@ -2401,9 +2429,55 @@ lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 lib64/libvsim-adaptor-client.so
 lib64/libvt_avsync.so
-priv-app/ImsService/ImsService.apk
+-priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
+vendor/bin/hw/vtservice_hidl
+vendor/bin/ipsec_mon
+vendor/bin/lbs_hidl_service
+vendor/bin/rcs_volte_stack
+vendor/bin/volte_clientapi_ua
+vendor/bin/volte_imcb
+vendor/bin/volte_imsm_93
+vendor/bin/volte_md_status
+vendor/bin/volte_rcs_ua
+vendor/bin/volte_stack
+vendor/bin/volte_ua
+vendor/etc/init/init.volte_imcb.rc
+vendor/etc/init/init.volte_imsm_93.rc
+vendor/etc/init/init.volte_md_status.rc
+vendor/etc/init/init.volte_stack.rc
+vendor/etc/init/init.volte_ua.rc
+vendor/etc/init/init.vtservice_hidl.rc
+vendor/etc/init/ipsec_mon.rc
+vendor/etc/init/lbs_hidl_service.rc
+vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
+vendor/etc/init/volte_clientapi_ua.rc
+vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
+vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib/libipsec_ims_shr.so
+vendor/lib/librcs_interface.so
+vendor/lib/librcs_volte_core.so
+vendor/lib/libvolte_core_shr.so
+vendor/lib/libvolte_xdmc_shr.so
+vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
+vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib64/lbs_hidl_service-impl.so
+vendor/lib64/libipsec_ims_shr.so
+vendor/lib64/libmmagent.so
+vendor/lib64/libmtklimiter_vendor.so
+vendor/lib64/libmtknetcap.so
+vendor/lib64/libmtknetutils.so
+vendor/lib64/libmtkshifter_vendor.so
+vendor/lib64/libmtkspparser.so
+vendor/lib64/libmtksysutils.so
+vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
+vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
@@ -2428,6 +2502,11 @@ vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
 -vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xml
 -vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
 -vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
+
+# Light
+vendor/bin/hw/android.hardware.lights-service.mediatek
+vendor/etc/init/lights-mtk-default.rc
+vendor/etc/vintf/manifest/lights-mtk-default.xml
 
 # Media
 vendor/bin/mt6789/v3avpud.mt6789
@@ -2634,13 +2713,13 @@ vendor/lib64/libprotobuf-cpp-full-3.9.1.so
 vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/libtranlog.so
 vendor/lib64/libwo.so
-vendor/lib64/vendor.transsion.hardware.hyperion.hap@1.0.so
-vendor/lib64/vendor.transsion.hardware.transtorage.storage@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so
+vendor/lib64/vendor.transsion.hardware.hyperion.hap@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
+vendor/lib64/vendor.transsion.hardware.transtorage.storage@1.0.so
 
 # MMAGENT
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -2759,9 +2838,26 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # Radio
 vendor/bin/hw/mtkfusionrild
+vendor/bin/AgentTest
+vendor/bin/ccci_fsd
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
+vendor/bin/charon
+vendor/bin/doeapp-sat
+vendor/bin/dtc_vendor
+vendor/bin/epdg_wod
+vendor/bin/factory
 vendor/bin/gsm0710muxd
+vendor/bin/gsm0710muxd
+vendor/bin/md_monitor
+vendor/bin/md_monitor_ctrl
+vendor/bin/mnld
+vendor/bin/mrdump_tool
+vendor/bin/muxreport
+vendor/bin/starter
+vendor/bin/stp_dump3
+vendor/bin/stroke
+vendor/bin/xcap
 vendor/etc/apdb/APDB_MT6789___W2227
 vendor/etc/apdb/APDB_MT6789___W2227_ENUM
 vendor/etc/init/gsm0710muxd.rc
@@ -2791,6 +2887,9 @@ vendor/lib/libmtkrillog.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
+vendor/lib64/libgwsd-ril.so
+vendor/lib64/libgwsdv2-ril.so
+vendor/lib64/libgwsdv3-ril.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmnetlink_v104.so
 vendor/lib64/libmtk-ril.so
@@ -2812,6 +2911,7 @@ vendor/lib64/librilfusion.so
 vendor/lib64/libstorage_otp.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libtrm.so
+vendor/lib64/libvia-ril.so
 vendor/lib64/libwpfa.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
@@ -2955,6 +3055,11 @@ vendor/etc/init/tetheroffloadservice.rc
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# USB
+vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
+vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
+vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
