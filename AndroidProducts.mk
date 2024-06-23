@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_LG8n.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_LG8n-user \
-    lineage_LG8n-userdebug \
-    lineage_LG8n-eng
+    lineage_LG8n-ap1a-user \
+    lineage_LG8n-ap1a-userdebug \
+    lineage_LG8n-ap1a-eng
