@@ -1,3 +1,7 @@
+# AEE
+ro.vendor.have_aee_feature=1
+persist.vendor.mtk.aee.filter=0
+
 # APK Verity
 ro.apk_verity.mode=2
 
@@ -10,6 +14,7 @@ aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 
 # Bluetooth
+bluetooth.profile.asha.central.enabled=true
 persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true
 ro.bluetooth.a2dp_offload.supported=true
@@ -59,7 +64,6 @@ ro.vendor.tran.midtest.camera_als_ic=alspdt17
 ro.vendor.mtk_camera_app_version=3
 ro.vendor.camera.isp.support.colorspace=0
 ro.vendor.mtk_cam_security_support=0
-ro.vendor.mtk.c2.vdec.fmt.support.level=1
 
 # Connsys
 persist.vendor.connsys.chipid=-1
@@ -147,6 +151,15 @@ ro.vendor.mtk_agps_app=1
 ro.vendor.mtk_gps_support=1
 ro.vendor.mtk_log_hide_gps=1
 
+# GPU
+ro.opengles.version=196610
+
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
+# Fuse passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Keymaster
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.kmsetkey=trustonic
@@ -194,6 +207,17 @@ persist.vendor.volte_support=1
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
 
+# Logging
+persist.log.tag.BufferQueueDump=I
+persist.log.tag.BufferQueueProducer=I
+persist.log.tag.GraphicBuffer=I
+persist.log.tag.SurfaceControl=I
+persist.log.tag.Telecom=I
+persist.log.tag.Telephony=I
+
+# Logd
+ro.logd.kernel=false
+
 # LMK
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
@@ -204,6 +228,7 @@ ro.lmk.thrashing_limit=25
 ro.lmk.thrashing_limit_decay=50
 
 # Media
+ro.vendor.mtk.c2.vdec.fmt.support.level=1
 debug.mediatek.disp_decompress=1
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
