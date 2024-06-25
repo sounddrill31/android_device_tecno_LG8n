@@ -45,43 +45,6 @@
     <integer-array name="config_ambientDarkeningThresholds">
         <item>200</item>
     </integer-array>
-
-    <!-- Array of desired screen brightness in nits corresponding to the lux values
-         in the config_autoBrightnessLevels array. The display brightness is defined as the measured
-         brightness of an all-white image.
-
-         If this is defined then:
-            - config_autoBrightnessLcdBacklightValues should not be defined
-            - config_screenBrightnessNits must be defined
-            - config_screenBrightnessBacklight must be defined
-
-         This array should have size one greater than the size of the config_autoBrightnessLevels
-         array. The brightness values must be non-negative and non-decreasing. This must be
-         overridden in platform specific overlays -->
-    <array name="config_autoBrightnessDisplayValuesNits">
-        <item>4.522</item>
-        <item>20.246</item>
-        <item>55.509</item>
-        <item>74.653</item>
-        <item>82.757</item>
-        <item>93.15</item>
-        <item>117.678</item>
-        <item>138.666</item>
-        <item>164.847</item>
-        <item>189.157</item>
-        <item>207.656</item>
-        <item>221.191</item>
-        <item>277.164</item>
-        <item>350.798</item>
-        <item>391.524</item>
-        <item>414.81</item>
-        <item>434.151</item>
-        <item>455.291</item>
-        <item>490.922</item>
-        <item>500</item>
-        <item>580</item>
-    </array>
-
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array. -->
     <integer-array name="config_screenBrightnessBacklight">
@@ -112,24 +75,24 @@
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
-        <item>4.5215</item>
-        <item>33.37784</item>
-        <item>69.09702</item>
-        <item>105.53111</item>
-        <item>141.15657</item>
-        <item>177.40657</item>
-        <item>212.14172</item>
-        <item>247.64085</item>
-        <item>282.03754</item>
-        <item>317.2586</item>
-        <item>351.1292</item>
-        <item>384.87363</item>
-        <item>418.19705</item>
-        <item>451.90884</item>
-        <item>485.0235</item>
-        <item>517.10864</item>
-        <item>548.933</item>
-        <item>580</item>
+         <item>1</item>
+         <item>15</item>
+         <item>30</item>
+         <item>45</item>
+         <item>60</item>
+         <item>75</item>
+         <item>90</item>
+         <item>105</item>
+         <item>120</item>
+         <item>135</item>
+         <item>150</item>
+         <item>165</item>
+         <item>180</item>
+         <item>195</item>
+         <item>210</item>
+         <item>225</item>
+         <item>240</item>
+         <item>255</item>
     </array>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness
@@ -195,7 +158,7 @@
 
     <!-- Minimum screen brightness setting allowed by power manager.
          The user is forbidden from setting the brightness below this level.  -->
-    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.003921569</item>
+    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.003921569</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
