@@ -160,6 +160,8 @@ TARGET_OTA_ASSERT_DEVICE := LG8n,TECNO-LG8n
 # Selinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := 2023-11-05
 
