@@ -112,24 +112,24 @@
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
-        <item>4.5215</item>
-        <item>33.37784</item>
-        <item>69.09702</item>
-        <item>105.53111</item>
-        <item>141.15657</item>
-        <item>177.40657</item>
-        <item>212.14172</item>
-        <item>247.64085</item>
-        <item>282.03754</item>
-        <item>317.2586</item>
-        <item>351.1292</item>
-        <item>384.87363</item>
-        <item>418.19705</item>
-        <item>451.90884</item>
-        <item>485.0235</item>
-        <item>517.10864</item>
-        <item>548.933</item>
-        <item>580</item>
+         <item>1</item>
+         <item>15</item>
+         <item>30</item>
+         <item>45</item>
+         <item>60</item>
+         <item>75</item>
+         <item>90</item>
+         <item>105</item>
+         <item>120</item>
+         <item>135</item>
+         <item>150</item>
+         <item>165</item>
+         <item>180</item>
+         <item>195</item>
+         <item>210</item>
+         <item>225</item>
+         <item>240</item>
+         <item>255</item>
     </array>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness
@@ -195,7 +195,7 @@
 
     <!-- Minimum screen brightness setting allowed by power manager.
          The user is forbidden from setting the brightness below this level.  -->
-    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.003921569</item>
+    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.003921569</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
