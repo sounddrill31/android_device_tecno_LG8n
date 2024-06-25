@@ -3077,6 +3077,12 @@ vendor/lib64/libvibrator.so
 vendor/etc/vintf/manifest/vibrator-mtk-default.xml
 vendor/etc/init/vibrator-mtk-default.rc
 
+# Vibrator firmware
+vendor/firmware/aw8622x_haptic.bin
+vendor/firmware/aw8622x_osc_rtp_12K_10s.bin
+vendor/firmware/aw8622x_rtp.bin
+vendor/firmware/aw8624_rtp.bin
+
 # Wi-Fi
 vendor/bin/wlan_assistant
 vendor/bin/netdc
