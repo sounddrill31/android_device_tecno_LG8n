@@ -2725,6 +2725,8 @@ vendor/lib64/vendor.transsion.hardware.hyperion.hap@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
 vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
 vendor/lib64/vendor.transsion.hardware.transtorage.storage@1.0.so
+vendor/lib/libimsg_log.so
+vendor/lib64/libimsg_log.so
 
 # MMAGENT
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -3077,11 +3079,21 @@ vendor/etc/init/vibrator-mtk-default.rc
 
 # Wi-Fi
 vendor/bin/wlan_assistant
+vendor/bin/netdc
+vendor/bin/wfca
+vendor/etc/init/init.connfem.rc
+vendor/etc/init/init.wfca.rc
 vendor/etc/init/init.wlan_drv.rc
+vendor/etc/init/init.wod.rc
 vendor/etc/init/wlan_assistant.rc
+vendor/etc/wfd_source_capability.csv
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/libapmonitor_vendor.so
 vendor/etc/wfd_source_capability.csv
 vendor/lib/libapmonitor_vendor.so
+vendor/lib/libwpa_client.so
+vendor/lib64/libwpa_client.so
+vendor/lib/meta_wifi_data.so
+vendor/lib64/meta_wifi_data.so
