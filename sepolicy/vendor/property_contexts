@@ -35,5 +35,3 @@ vendor.service.nvram_restore                u:object_r:vendor_mtk_service_nvram_
 # VT
 ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
 
-# Vibrator
-ro.vendor.tran.vibrator.option              u:object_r:vendor_mtk_default_prop:s0
