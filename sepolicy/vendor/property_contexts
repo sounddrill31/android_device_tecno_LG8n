@@ -25,8 +25,20 @@ vendor.fp.transsion.lcmname                 u:object_r:vendor_fingerprint_prop:s
 # Key manager
 ro.mtk_key_manager_support                  u:object_r:vendor_mtk_default_prop:s0
 
+# NFC related property
+persist.vendor.st_nfc_gsma_support          u:object_r:vendor_mtk_st_nfc_gsma_support_prop:s0
+persist.vendor.st_nfc_ignore_modem          u:object_r:vendor_mtk_st_nfc_ignore_modem_prop:s0
+ro.vendor.mtk_nfc_addon_support             u:object_r:vendor_mtk_nfc_addon_support_prop:s0
+ro.vendor.mtk_uicc_clf                      u:object_r:vendor_mtk_nfc_uicc_clf_prop:s0
+persist.vendor.radio.seapi.off              u:object_r:vendor_mtk_radio_seapi_off_prop:s0
+persist.vendor.nxp_nfc_gsma_support         u:object_r:vendor_mtk_nxp_nfc_gsma_support_prop:s0
+vendor.nfc.nfcstackp.enable                 u:object_r:vendor_mtk_nfc_nfcstackp_enable_prop:s0
+
 # NVRAM
 vendor.service.nvram_restore                u:object_r:vendor_mtk_service_nvram_restore_prop:s0
 
 # VT
 ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
+
+# Vibrator
+ro.vendor.tran.vibrator.option              u:object_r:vendor_mtk_default_prop:s0

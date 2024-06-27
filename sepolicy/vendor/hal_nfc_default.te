@@ -1,2 +1,7 @@
-allow hal_nfc_default sysfs_soc:dir search;
-allow hal_nfc_default sysfs_soc:file { read open getattr };
+allow hal_nfc_default nfc_data_file:dir { search getattr };
+allow hal_nfc_default nfc_data_file:file { rw_file_perms };
+
+allow hal_nfc_default nfc_vendor_data_file:dir { rw_dir_perms };
+allow hal_nfc_default nfc_vendor_data_file:file { create_file_perms };
+
+allow hal_nfc_default nxpnfc_hwservice:hwservice_manager { add find };
