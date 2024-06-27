@@ -25,13 +25,8 @@ vendor.fp.transsion.lcmname                 u:object_r:vendor_fingerprint_prop:s
 # Key manager
 ro.mtk_key_manager_support                  u:object_r:vendor_mtk_default_prop:s0
 
-# NFC related property
-persist.vendor.nxp_nfc_gsma_support         u:object_r:vendor_mtk_nxp_nfc_gsma_support_prop:s0
-vendor.nfc.nfcstackp.enable                 u:object_r:vendor_mtk_nfc_nfcstackp_enable_prop:s0
-
 # NVRAM
 vendor.service.nvram_restore                u:object_r:vendor_mtk_service_nvram_restore_prop:s0
 
 # VT
 ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
-
