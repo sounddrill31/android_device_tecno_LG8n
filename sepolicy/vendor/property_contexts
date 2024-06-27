@@ -26,8 +26,6 @@ vendor.fp.transsion.lcmname                 u:object_r:vendor_fingerprint_prop:s
 ro.mtk_key_manager_support                  u:object_r:vendor_mtk_default_prop:s0
 
 # NFC related property
-persist.vendor.st_nfc_gsma_support          u:object_r:vendor_mtk_st_nfc_gsma_support_prop:s0
-persist.vendor.st_nfc_ignore_modem          u:object_r:vendor_mtk_st_nfc_ignore_modem_prop:s0
 ro.vendor.mtk_nfc_addon_support             u:object_r:vendor_mtk_nfc_addon_support_prop:s0
 ro.vendor.mtk_uicc_clf                      u:object_r:vendor_mtk_nfc_uicc_clf_prop:s0
 persist.vendor.radio.seapi.off              u:object_r:vendor_mtk_radio_seapi_off_prop:s0
