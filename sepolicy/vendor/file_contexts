@@ -18,6 +18,8 @@
 /data/vendor/goodix/gf_data(/.*)?                                                               u:object_r:vendor_gf_data_file:s0
 
 # NFC
+/dev/pn54x                                                                                  u:object_r:nfc_device:s0
+/dev/pn553                                                                                  u:object_r:nfc_device:s0
 /dev/nxpnfc                                                                                 u:object_r:nfc_device:s0
 
 # Power
