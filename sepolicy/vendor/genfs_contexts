@@ -25,7 +25,8 @@ genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:1/block
 genfscon sysfs /devices/platform/11270000.ufshci/host0/target0:0:0/0:0:0:2/block/sdc               u:object_r:sysfs_devices_block:s0
 
 # Extcon
-genfscon sysfs /devices/platform/extcon_usb                                                         u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/extcon_usb                                                        u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/extcon_usb1                                                       u:object_r:sysfs_extcon:s0
 
 # Gesture
 genfscon proc /gesture_function                                                                     u:object_r:proc_gesture_function:s0
@@ -53,15 +54,6 @@ genfscon sysfs /devices/platform/usb0/wakeup                                    
 # Torch
 genfscon sysfs /devices/virtual/sub_torch/sub_torch/sub_torch_level                                 u:object_r:sysfs_sub_torch_file:s0
 genfscon sysfs /devices/virtual/torch/torch/torch_level                                             u:object_r:sysfs_torch_file:s0
-
-# Vibrator
-genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-005a/leds/vibrator_single(/.*)?           u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/platform/soc/soc:regulator_vibrator/leds/vibrator                           u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/platform/odm/odm:vibrator@0/leds/vibrator                                   u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/platform/regulator_vibrator/leds/vibrator                                   u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/virtual/timed_output/vibrator                                               u:object_r:sysfs_vibrator:s0
-genfscon sysfs devices/platform/odm/odm:vibrator@0/leds/vibrator_r(/.*)?                            u:object_r:sysfs_vibrator:s0
-genfscon sysfs devices/platform/odm/odm:vibrator@0/leds/vibrator_l(/.*)?                            u:object_r:sysfs_vibrator:s0
 
 # usb
 genfscon sysfs /devices/platform/11270000.usb3/musb-hdrc/udc/musb-hdrc                             u:object_r:sysfs_usb_nonplat:s0
