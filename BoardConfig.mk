@@ -46,7 +46,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := kaito_pre-alpha
+TARGET_BOOTLOADER_BOARD_NAME := kaito_alpha
 TARGET_NO_BOOTLOADER := true
 
 # Broken Rules
