@@ -2066,11 +2066,11 @@ vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
-vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/mediadrm/libwvdrmengine.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
-vendor/lib64/libwvhidl.so
+vendor/lib64/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
 
 # Engineermode
 system/lib/libem_aoltest_jni.so
@@ -3037,6 +3037,7 @@ vendor/firmware/aw8622x_rtp.bin
 vendor/firmware/aw8624_rtp.bin
 
 # Wi-Fi
+vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
 vendor/bin/wlan_assistant
 vendor/bin/netdc
 vendor/bin/wfca
@@ -3045,6 +3046,7 @@ vendor/etc/init/init.wfca.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wod.rc
 vendor/etc/init/wlan_assistant.rc
+vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/wfd_source_capability.csv
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
