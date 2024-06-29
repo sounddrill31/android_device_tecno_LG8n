@@ -137,7 +137,15 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor
+	android.hardware.drm@1.0.vendor:64 \
+	android.hardware.drm@1.1.vendor:64 \
+	android.hardware.drm@1.2.vendor:64 \
+	android.hardware.drm@1.3.vendor:64 \
+	android.hardware.drm@1.4.vendor:64 \
+
+# DRM (Clearkey)
+PRODUCT_PACKAGES += \
+	android.hardware.drm-service.clearkey
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
