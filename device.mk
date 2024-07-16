@@ -363,10 +363,6 @@ PRODUCT_PACKAGES += \
     libhidlbase-v31 \
     libbinder-v31
 
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.transsion
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     wpa_supplicant \

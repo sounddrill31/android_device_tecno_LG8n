@@ -55,6 +55,9 @@ fi
 
 function blob_fixup {
     case "$1" in
+        vendor/bin/hw/android.hardware.vibrator-service.mediatek)
+            "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "$2"
+            ;;
         vendor/bin/hw/android.hardware.gnss-service.mediatek |\
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
