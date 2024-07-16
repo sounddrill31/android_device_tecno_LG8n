@@ -357,6 +357,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.transsion
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils-v31 \
+    libhidlbase-v31 \
+    libbinder-v31
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.transsion
