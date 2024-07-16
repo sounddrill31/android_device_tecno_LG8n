@@ -10,10 +10,10 @@
 | Memory                  | 8GB                                                         |
 | Shipped Android version | 12                                                          |
 | Storage                 | 256GB                                                       |
-| MicroSD                 | No                                                          |
+| MicroSD                 | MicroSDXC                                                          |
 | Battery                 | Non-removable Li-Po 6000 mAh                                |
 | Dimensions              | 164.8 x 77 x 9.2 mm                                         |
-| Display                 | 1080 x 2460 pixels, 6.66 inches                             |
+| Display                 | 1080 x 2400 pixels, 6.66 inches                             |
 | Rear Camera 1           | 50 MP, (wide), PDAF                                         |
 | Rear Camera 2           | 0.08 MP, (auxiliary)                                        |
 | Front Camera            | 8 MP                                                        |
