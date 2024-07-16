@@ -54,6 +54,7 @@ ro.vendor.tran.midtest.camera_als_ic=alspdt17
 ro.vendor.mtk_camera_app_version=3
 ro.vendor.camera.isp.support.colorspace=0
 ro.vendor.mtk_cam_security_support=0
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,tw.nekomimi.nekogram
 
 # Connsys
 persist.vendor.connsys.chipid=-1
