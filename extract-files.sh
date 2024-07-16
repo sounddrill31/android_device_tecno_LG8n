@@ -61,6 +61,11 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.lights-service.mediatek)
             "$PATCHELF" --replace-needed "android.hardware.light-V1-ndk_platform.so" "android.hardware.light-V1-ndk.so" "$2"
             ;;
+        vendor/lib/hw/audio.primary.mt6789.so)
+            ;&
+        vendor/lib64/hw/audio.primary.mt6789.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
+            ;;
         vendor/bin/hw/mt6789/camerahalserver)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v31.so" "${2}"
