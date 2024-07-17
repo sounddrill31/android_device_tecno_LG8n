@@ -61,8 +61,13 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.lights-service.mediatek)
             "$PATCHELF" --replace-needed "android.hardware.light-V1-ndk_platform.so" "android.hardware.light-V1-ndk.so" "$2"
             ;;
-        vendor/lib/hw/audio.primary.mt6789.so)
-            ;&
+        vendor/lib*/libspeech_enh_lib.so|\
+        vendor/lib64/libwifi-hal-mtk.so|\
+        vendor/lib*/hw/power.mt6789.so|\
+        vendor/lib*/hw/sound_trigger.primary.mt6789.so|\
+        vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
+            "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
+            ;;
         vendor/lib64/hw/audio.primary.mt6789.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v31.so" "${2}"
             ;;
