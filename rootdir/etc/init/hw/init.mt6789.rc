@@ -996,7 +996,6 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
 
-<<<<<<< HEAD:rootdir/etc/init/hw/init.mt6789.rc
     write /sys/block/mmcblk0/queue/iostats 1
     write /sys/block/mmcblk0/queue/read_ahead_kb 512
     write /sys/block/mmcblk0/queue/nr_requests 128
@@ -1050,14 +1049,13 @@ on property:sys.boot_completed=1
 #	user system
 #	group gps system radio
 #	class main
-=======
+
     # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-5,7
     write /dev/cpuset/background/cpus 4-5
     write /dev/cpuset/system-background/cpus 2-5
     write /dev/cpuset/restricted/cpus 2-5
->>>>>>> 2214b06 (pissarro: remove IO read_ahead_kb tune):rootdir/etc/init.mt6877.rc
 
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
@@ -1140,3 +1138,6 @@ on property:sys.boot_completed=1
 # Report max frequency to unity and miHoYo (HoYoverse) games tasks
     write /proc/sys/kernel/sched_lib_name "com.miHoYo.,com.HoYoverse.,UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
+
+on property:sys.boot_completed=1
+    write /sys/devices/platform/odm/odm:tran_battery/OTG_CTL 1
