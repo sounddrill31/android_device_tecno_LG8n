@@ -81,6 +81,9 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
             "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
             ;;
+        vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
