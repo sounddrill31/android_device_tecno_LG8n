@@ -61,8 +61,10 @@ PRODUCT_PACKAGES += \
     audio_policy.stub
 
 PRODUCT_PACKAGES += \
-    libalsautils \
     libaudiofoundation.vendor \
+    libalsautils \
+    libnbaio_mono \
+    libtinycompress \
     libdynproc \
     libhapticgenerator
 
@@ -130,6 +132,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     libdrm.vendor \
+	libhwc2on1adapter:64 \
+	libhwc2onfbadapter:64 \
     libutils-v32
 
 # DRM
@@ -181,9 +185,13 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.allocator@1.0 \
+    android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
+    libhwbinder \
     libhwbinder.vendor
 
 # IMS
