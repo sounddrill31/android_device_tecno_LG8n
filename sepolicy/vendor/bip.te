@@ -1,2 +1,0 @@
-get_prop(bip, net_dns_prop)
-allow bip socket_device:sock_file create;
