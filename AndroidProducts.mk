@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_LG8n.mk
+    $(LOCAL_DIR)/bliss_LG8n.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_LG8n-user \
-    lineage_LG8n-userdebug \
-    lineage_LG8n-eng
+    bliss_LG8n-user \
+    bliss_LG8n-userdebug \
+    bliss_LG8n-eng

@@ -12,10 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/tecno/LG8n/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
 
 BOARD_VENDOR := TECNO
-PRODUCT_NAME := lineage_LG8n
+PRODUCT_NAME := bliss_LG8n
 PRODUCT_DEVICE := LG8n
 PRODUCT_MANUFACTURER := TECNO
 PRODUCT_BRAND := TECNO
@@ -29,5 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := TECNO/LG8n-GL/TECNO-LG8n:12/SP1A.210812.016/240313V1796:user/release-keys
 
-# Time
-LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
