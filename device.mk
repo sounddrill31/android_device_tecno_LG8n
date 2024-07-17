@@ -131,14 +131,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
-    libdrm.vendor \
-	libhwc2on1adapter:64 \
-	libhwc2onfbadapter:64 \
-    libutils-v32
+    android.hardware.graphics.mapper@4.0.vendor \
+    libdrm.vendor 
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm-service.clearkey
 
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor
@@ -252,6 +250,9 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
     android.hardware.security.secureclock-V1-ndk_platform.vendor \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
+    android.hardware.security.rkp-V1-ndk.vendor \
+    android.hardware.security.rkp-V2-ndk.vendor \
+    android.hardware.security.rkp-V3-ndk.vendor \
     libcppbor_external.vendor:64
 
 # Lights
@@ -279,6 +280,8 @@ PRODUCT_COPY_FILES += \
 # Misc
 PRODUCT_PACKAGES += \
     libchrome.vendor \
+    libruy.vendor \
+    libpcap.vendor \
     libtextclassifier_hash.vendor
 
 # MTK In-call service
@@ -314,10 +317,6 @@ PRODUCT_PACKAGES += \
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
 	ApertureOverlay
-
-# Pcap
-PRODUCT_PACKAGES += \
-    libpcap.vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -371,7 +370,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
     android.hardware.power-V2-ndk.vendor \
     android.hardware.power@1.3.vendor \
-    libmtkperf_client_vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 PRODUCT_COPY_FILES += \
@@ -425,6 +423,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
     android.hardware.thermal@2.0.vendor
 
 # Updatable APEXes
@@ -436,10 +435,15 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget@1.1.vendor
 
 # VNDK
-PRODUCT_PACKAGES += \
-    libutils-v31 \
-    libhidlbase-v31 \
-    libbinder-v31
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbinder-v31.so \
+    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase-v31.so \
+    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v31.so \
+    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so  \
+    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder-v31.so \
+    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v31.so \
+    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v31.so \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so 
 
 # Wi-Fi
 PRODUCT_PACKAGES += \

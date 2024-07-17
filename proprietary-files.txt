@@ -2376,15 +2376,15 @@ vendor/lib64/libviagpsrpc.so
 # IMS
 bin/vtservice
 etc/init/init.vtservice.rc
-framework/mediatek-common.jar
-framework/mediatek-framework.jar
-framework/mediatek-ims-base.jar
-framework/mediatek-ims-common.jar
-framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-telecom-common.jar
-framework/mediatek-telephony-base.jar
-framework/mediatek-telephony-common.jar
-framework/mediatek-wfo-legacy.jar
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
+-framework/mediatek-ims-common.jar
+-framework/mediatek-ims-extension-plugin.jar
+-framework/mediatek-telecom-common.jar
+-framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-common.jar
+-framework/mediatek-wfo-legacy.jar
 lib64/libcomutils.so
 lib64/libimsma.so
 lib64/libimsma_adapt.so
@@ -2400,9 +2400,55 @@ lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 lib64/libvsim-adaptor-client.so
 lib64/libvt_avsync.so
-priv-app/ImsService/ImsService.apk
+-priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
+vendor/bin/hw/vtservice_hidl
+vendor/bin/ipsec_mon
+vendor/bin/lbs_hidl_service
+vendor/bin/rcs_volte_stack
+vendor/bin/volte_clientapi_ua
+vendor/bin/volte_imcb
+vendor/bin/volte_imsm_93
+vendor/bin/volte_md_status
+vendor/bin/volte_rcs_ua
+vendor/bin/volte_stack
+vendor/bin/volte_ua
+vendor/etc/init/init.volte_imcb.rc
+vendor/etc/init/init.volte_imsm_93.rc
+vendor/etc/init/init.volte_md_status.rc
+vendor/etc/init/init.volte_stack.rc
+vendor/etc/init/init.volte_ua.rc
+vendor/etc/init/init.vtservice_hidl.rc
+vendor/etc/init/ipsec_mon.rc
+vendor/etc/init/lbs_hidl_service.rc
+vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
+vendor/etc/init/volte_clientapi_ua.rc
+vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
+vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib/libipsec_ims_shr.so
+vendor/lib/librcs_interface.so
+vendor/lib/librcs_volte_core.so
+vendor/lib/libvolte_core_shr.so
+vendor/lib/libvolte_xdmc_shr.so
+vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
+vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib64/lbs_hidl_service-impl.so
+vendor/lib64/libipsec_ims_shr.so
+vendor/lib64/libmmagent.so
+vendor/lib64/libmtklimiter_vendor.so
+vendor/lib64/libmtknetcap.so
+vendor/lib64/libmtknetutils.so
+vendor/lib64/libmtkshifter_vendor.so
+vendor/lib64/libmtkspparser.so
+vendor/lib64/libmtksysutils.so
+vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
+vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
@@ -2839,6 +2885,9 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl
+vendor/bin/dmc_core
+vendor/bin/epdg_wod
+vendor/bin/mtk_pkm_service
 vendor/bin/rcs_volte_stack
 vendor/bin/volte_clientapi_ua
 vendor/bin/volte_imcb
@@ -2846,24 +2895,38 @@ vendor/bin/volte_imsm_93
 vendor/bin/volte_md_status
 vendor/bin/volte_rcs_ua
 vendor/bin/volte_stack
+vendor/bin/volte_ua
+vendor/bin/wfca
+vendor/etc/init/dmc_core.rc
 vendor/etc/init/init.volte_imcb.rc
 vendor/etc/init/init.volte_imsm_93.rc
 vendor/etc/init/init.volte_md_status.rc
 vendor/etc/init/init.volte_stack.rc
+vendor/etc/init/init.volte_ua.rc
 vendor/etc/init/init.vtservice_hidl.rc
+vendor/etc/init/init.wfca.rc
+vendor/etc/init/init.wod.rc
+vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/volte_clientapi_ua.rc
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/libipsec_ims_shr.so
+vendor/lib/libpkm.so
 vendor/lib/librcs_volte_core.so
 vendor/lib/libverno.so
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
+vendor/lib/libwo.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/libipsec_ims_shr.so
+vendor/lib64/libpkm.so
 vendor/lib64/libverno.so
+vendor/lib64/libwo.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
+vendor/lib64/vendor.mediatek.hardware.dmc@1.0.so
+vendor/lib64/vendor.mediatek.hardware.dmc@1.1.so
+vendor/lib64/vendor.mediatek.hardware.dmc@1.2.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Secure Element
@@ -2931,8 +2994,11 @@ vendor/lib64/vendor.trustonic.tee@1.1.so
 # Thermal
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/thermal_core
+vendor/bin/thermal_intf
+vendor/etc/dar_thermal_core/thermal_core_config.json
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/init/init.thermal_core.rc
+vendor/etc/predthermallevel_rf.json
 vendor/etc/thermal/disable_skin_control.conf
 vendor/etc/thermal/disable_thermal.conf
 vendor/etc/thermal/disable_thermal_temp.conf
@@ -2948,6 +3014,9 @@ vendor/lib/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
+
+# Thermal-Hardware
+vendor/lib/hw/thermal_hal.so
 vendor/lib64/hw/thermal_hal.so
 
 # TNE
