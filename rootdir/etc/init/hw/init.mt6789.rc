@@ -348,7 +348,7 @@ on post-fs-data
     setrlimit 8 -1 -1
 
     # CMDQ
-    chmod 0644 /dev/mtk_mdp
+    chmod 0640 /dev/mtk_mdp
     chown system system /dev/mtk_mdp
 
     # MDP SYNC
@@ -996,19 +996,6 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
 
-    write /sys/block/mmcblk0/queue/iostats 1
-    write /sys/block/mmcblk0/queue/read_ahead_kb 512
-    write /sys/block/mmcblk0/queue/nr_requests 128
-    write /sys/block/sdc/queue/iostats 1
-    write /sys/block/sdc/queue/read_ahead_kb 512
-    write /sys/block/sdc/queue/nr_requests 128
-    write /sys/block/dm-0/queue/read_ahead_kb 128
-    write /sys/block/dm-1/queue/read_ahead_kb 128
-    write /sys/block/dm-2/queue/read_ahead_kb 128
-    write /sys/block/dm-3/queue/read_ahead_kb 128
-    write /sys/block/dm-4/queue/read_ahead_kb 128
-    write /sys/block/dm-5/queue/read_ahead_kb 128
-
 on property:sys.boot_completed=1
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1 -1 -1"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
@@ -1049,13 +1036,6 @@ on property:sys.boot_completed=1
 #	user system
 #	group gps system radio
 #	class main
-
-    # Setup runtime cpusets
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-5,7
-    write /dev/cpuset/background/cpus 4-5
-    write /dev/cpuset/system-background/cpus 2-5
-    write /dev/cpuset/restricted/cpus 2-5
 
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
