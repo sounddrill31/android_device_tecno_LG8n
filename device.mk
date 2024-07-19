@@ -316,6 +316,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
 	FrameworksResOverlay \
 	SettingsResOverlay \
+	SystemUIOverlay \
 	TelephonyOverlay
 
 # Lineage-Specific Overlays
