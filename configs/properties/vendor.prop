@@ -164,6 +164,10 @@ ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_blulight_def_support=1
 ro.vendor.mtk_mvpu_security_support=0
 ro.vendor.mtk_fd_support=1
+ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
@@ -265,7 +269,7 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 ro.soc.manufacturer=Mediatek
 ro.vendor.mediatek.platform=MT6789
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
-ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V14.2.1_reallytek.s0mp1rc.k61v1.64.bsp_P119
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V14.2.1_reallytek.s0mp1rc.k61v1.64.bsp_P137
 
 # Stock Stuff
 ro.vendor.rc=/vendor/etc/init/hw/
