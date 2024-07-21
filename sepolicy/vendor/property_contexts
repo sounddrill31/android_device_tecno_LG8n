@@ -23,6 +23,8 @@ vendor.fp.goodix.Y.offset                   u:object_r:vendor_fingerprint_prop:s
 vendor.fp.transsion.lcmname                 u:object_r:vendor_fingerprint_prop:s0
 vendor.fp.currentUid                        u:object_r:vendor_fingerprint_prop:s0
 persist.vendor.fp.sensorUid                 u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.transsion.auto_test          u:object_r:vendor_transsion_fingerprint_prop:s0
+
 
 
 # Key manager
