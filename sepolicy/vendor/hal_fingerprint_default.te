@@ -13,7 +13,5 @@ allow hal_fingerprint_default property_socket:sock_file write;
 dontaudit hal_fingerprint_default hal_power_hwservice:hwservice_manager find;
 
 set_prop(hal_fingerprint_default, ctl_default_prop)
-get_prop(hal_fingerprint_default, vendor_transsion_fingerprint_prop)
-set_prop(hal_fingerprint_default, vendor_transsion_fingerprint_prop)
 get_prop(hal_fingerprint_default, vendor_fingerprint_prop)
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
