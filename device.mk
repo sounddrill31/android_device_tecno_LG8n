@@ -463,7 +463,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/bliss/interfaces/power-libperfmgr \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/transsion
