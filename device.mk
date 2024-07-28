@@ -103,6 +103,9 @@ PRODUCT_PACKAGES += \
     libexpat.vendor \
     libpng.vendor
 
+PRODUCT_PACKAGES += \
+    libshim_camera_metadata
+
 # CAS
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
