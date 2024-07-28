@@ -505,6 +505,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libui_shim.vendor
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.transsion
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     libwifi-hal-wrapper \
